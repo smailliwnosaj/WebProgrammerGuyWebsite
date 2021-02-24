@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Jason Williams - Senior Software Engineerr</title>
+    
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mobile-menu-open" class="shadow-large" tabindex="1" aria-label="Click to open main menue">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <header>
+        <div id="mobile-menu-close" tabindex="1" aria-label="Click to close main menue">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow"></ul>
+    </header>
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Jason Williams</h1>
+            <h2>Senior Software Engineer</h2>
+            <a href="https://www.linkedin.com/pub/jason-williams/22/194/280" class="btn-rounded-white" target="_blank">Download Resume</a>
+        </div>
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+
+    <div id="about" style="border-bottom: 1px solid #dcd9d9;">
+        <div style="text-align: center;">
+            <h2 class="heading">About Me</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+				<div style="padding: 2px;border: 1px #999999 solid;float: left;margin: 2px 25px 25px 0;">
+					<img height="300" style="border: 1px #999999 solid;" src="images/jason.jpg">
+				</div>
+                <p>I have 16 years experience writing console and website applications, more than 350 college credits in Software Engineering and Information Technology, am fluent in over 12 programming languages, and have been responsible for developing software products connecting upwards of 200 million end users.  My experience building applications varies widely in purpose and size including mobile responsive websites, mobile applications, web services, databases, and custom tools for automated testing. I am comfortable developing on any application layer, user interface, Service, business logic, and Database. I have excellent object-oriented abstraction and design abilities, having designed and developed powerful software frameworks using Javascript, MVC, MVVM, .NET (C# and VB), .NET Core, and Java. I am able to complete Tasks in an accurate and timely manner whether they require extensive upfront planning, mockups, and process flows, or can be more easily flushed out by writing them directly.  I make efforts to reach out to Product Owners for quick resolution whenever I have a question about Feature requirements.  I do my best to demonstrate completed Features to Product Owners before resolving Stories.  I prefer my code is peer reviewed before making a commit and often initiate the process.  I happily volunteer for projects which require research of new technologies.  I initiate work on backlogged items whenever Tasks are complete.  I have a highly tenacious personality, good work-life balance, a strong work ethic, and when asked if I can build something, my answer is always, "Of course I can".</p>
+                <br/>
+				<p>Visit my <a href="https://www.linkedin.com/pub/jason-williams/22/194/280" target="_blank">LinkedIn</a> profile for more information.</p>
+            </div>
+        </div>
+    </div>
+	
+	<div id="skills" style="border-bottom: 1px solid #dcd9d9;">
+        <h2 class="heading">Skills</h2>
+        <ul id="skillsContainer"></ul>
+    </div>
+	
+	<div id="education" style="border-bottom: 1px solid #dcd9d9;">
+        <h2 class="heading">Education</h2>
+        <div id="educationContainer"></div>
+        </div>
+    </div>
+	
+	<div id="experience" class="background-alt" style="border-bottom: 1px solid #dcd9d9;">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline"></div>
+    </div>
+    
+    <div id="certifications" style="text-align:center;border-bottom: 1px solid #dcd9d9;">
+        <h2 class="heading"><br/>Certifications</h2>
+        <div id="certificationsContainer"></div>
+    </div>
+
+    <div id="projects">
+        <h2 class="heading">Projects</h2>
+		<div id="projectsContainer"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2017 JASON WILLIAMS
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/smailliwnosaj" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/users/2733283/jason-williams" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/pub/jason-williams/22/194/280" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/htmlBuilder.js"></script>
+
+<template id="menu_template" style="display:none">
+    <li><a href="{{href}}">{{name}}</a></li>
+</template>
+
+<template id="skills_template" style="display:none">
+    <li>{{name}}</li>
+</template>
+
+<template id="education_template" style="display:none">
+    <div class="education-block">
+        <h3>{{school}}</h3>
+        <span class="education-date">{{date}}</span>
+        <h4>{{degree}}</h4>
+    </div>
+</template>
+
+<template id="experience_template" style="display:none">
+    <div data-date="{{date}}">
+        <h3>{{company}}</h3>
+        <h4>{{title}}</h4>
+        <p>{{description}}</p>
+    </div>
+</template>
+
+<template id="certifications_template" style="display:none">
+    <div class="education-block">
+        <h3>{{certification}}</h3>
+        <span class="education-date">{{date}}</span>
+        <!--<h4></h4>-->
+        <p style="clear:both;"><img style="float:left;margin:10px;height:40px" src="{{imagePath}}"/><br/>{{authority}}</p>
+    </div>
+</template>
+
+<template id="projects_template" style="display:none">
+    <div class="projects_item" title="{{description}}">
+        <h3 class="projects_title">{{title}}</h3>
+        <div class="projects_date">{{date}}</div>
+    </div>
+</template>
+
+<script type="text/javascript">
+    // MAIN MENU
+    htmlBuilder.append("menu", [
+        {name:"About", href:"#about", template:"menu_template"},
+        {name:"Skills", href:"#skills", template:"menu_template"},
+        {name:"Education", href:"#education", template:"menu_template"},
+        {name:"Experience", href:"#experience", template:"menu_template"},
+        {name:"Certifications", href:"#certifications", template:"menu_template"},
+        {name:"Projects", href:"#projects", template:"menu_template"}
+    ]);
+    
+    // SKILLS
+    htmlBuilder.append("skillsContainer", [
+        { name:"C#", template:"skills_template" },
+		{ name:"Java", template:"skills_template" },
+        { name:"JavaScript", template:"skills_template" },
+		{ name:"VB", template:"skills_template" },
+        { name:".NET", template:"skills_template" },
+        { name:".NET CORE", template:"skills_template" },
+        { name:"Javascript", template:"skills_template" },
+        { name:"jQuery", template:"skills_template" },
+        { name:"Kendo UI", template:"skills_template" },
+        { name:"AngularJs", template:"skills_template" },
+        { name:"CSS", template:"skills_template" },
+        { name:"LESS", template:"skills_template" },
+        { name:"Python", template:"skills_template" },
+        { name:"MVC", template:"skills_template" },
+        { name:"MVVM", template:"skills_template" },
+        { name:"ASP.NET", template:"skills_template" },
+        { name:"Visual Studio", template:"skills_template" },
+        { name:"Team Foundation Server", template:"skills_template" },
+        { name:"visual Studio Online", template:"skills_template" },
+        { name:"WinForms", template:"skills_template" },
+        { name:"SQL Server", template:"skills_template" },
+        { name:"JSON", template:"skills_template" },
+        { name:"XML", template:"skills_template" },
+        { name:"XSLT", template:"skills_template" },
+        { name:"HTML 5", template:"skills_template" },
+        { name:"Bootstrap", template:"skills_template" },
+        { name:"Font Awesome", template:"skills_template" },
+        { name:"Balsamiq", template:"skills_template" },
+        { name:"SQL Management Studio", template:"skills_template" },
+        { name:"Adobe RoboHelp 9", template:"skills_template" },
+        { name:"MadCap Flare 10,11", template:"skills_template" },
+        { name:"Telerik Report Designer", template:"skills_template" },
+        { name:"Eclipse", template:"skills_template" },
+        { name:"IntelliJ IDEA Community", template:"skills_template" },
+        { name:"Android Studio", template:"skills_template" },
+        { name:"Android SDK", template:"skills_template" }    
+    ]);
+    
+    // EDUCATION
+    htmlBuilder.append("educationContainer", [
+        { school:"Western Governors University", date:"Jan 2015 - June 2017", degree:"Bachelor of Science in Software Development", awards:["Excellence Award"], template:"education_template" },
+        { school:"Portland Community College", date:"2003 - 2006", degree:"Associate of Science (A.S.), Computer and Information Systems Security/Information Assurance", awards:[], template:"education_template" },
+        { school:"Heald College", date:"2002 - 2003", degree:"Computer and Information Systems Security/Information Assurance", awards:[], template:"education_template" },
+        { school:"Washington State University", date:"1992 - 1994", degree:"Computer Science", awards:["Phi Kappa Theta Fraternity","Mens Volleyball Club","Rugby Club"], template:"education_template" } 
+    ]);
+    
+    // EXPERIENCE
+    htmlBuilder.append("experience-timeline", [
+        { company:"CTI Group, An Enghouse Networks Company", title:"Senior Software Engineer", date:"November 2018 – Current", description:"Design and develop a mobile responsive web applications enabling management and playback of recorded call audio and video media for a leading provider of call recording software.  Responsible for all application layers, UI, web services, controllers, viewmodels, business, data, and more.  Work closely with other software and quality assurance team members.  Discuss progress with peers in daily Scrum meetings and Sprint Reviews", template:"experience_template" },
+        { company:"CTI Group, An Enghouse Networks Company", title:"Software Engineer", date:"September 2014 – Current", description:"", template:"experience_template" },
+        { company:"Weblink International, Inc.", title:"Software Engineer", date:"June 2011 – June 2014", description:"Develop website modules, SAAS client applications, and backend web services for a leading provider of Member  Management software.  Responsible for UI, middle layer, and data layer code, deploying to Alpha, Beta, and Release branches, designing  mockups, documentation, unit and functional tests, IT services, desktop support, Tier 3 support, and more.  Create new portable website modules, content management system views, and web services.  Discuss progress in daily scrum meetings and bi-weekly sprint reviews", template:"experience_template"},
+        { company:"Weblink International, Inc.", title:"Website Developer", date:"September 2009 – June 2011", description:"", template:"experience_template"}
+    ]);
+    
+    // CERTIFICATIONS
+    htmlBuilder.append("certificationsContainer", [
+        { certification:"Java SE 8 Programmer I", date:"Sep 2016 – Present License 1Z0-808", authority:"Oracle", imagePath:"https://media.licdn.com/dms/image/C4D0BAQG_Cl_OtKtHaQ/company-logo_400_400/0?e=2131920000&v=beta&t=g52tPuhleiXByWasSIR9vjP6lwgyR3-X8CSfOA3OYzQ", template:"certifications_template" },
+        { certification:"CompTIA Project+", date:"May 2016 – Present", authority:"CompTIA", imagePath:"/sites/webprogrammerguy/images/project.jpg", template:"certifications_template" },
+        { certification:"CompTIA Security+ ce", date:"Jun 2016 – Jun 2019", authority:"CompTIA", imagePath:"/sites/webprogrammerguy/images/security.jpg", template:"certifications_template" },
+        { certification:"CompTIA A+ ce", date:"Apr 2015 – Sep 2018", authority:"CompTIA", imagePath:"/sites/webprogrammerguy/images/a.jpg", template:"certifications_template" },
+        { certification:"CompTIA Network+ ce", date:"Sep 2015 – Sep 2018", authority:"CompTIA", imagePath:"/sites/webprogrammerguy/images/network.png", template:"certifications_template" }
+    ]);
+
+    // PROJECTS
+    $.getJSON("https://spreadsheets.google.com/feeds/list/1MZ-WRr2WN-k35TUSVPbSFMCmTYuGCsrw1es5ayT1ZnU/od6/public/basic?alt=json", 
+    function(data) {
+        var projectData = [];
+        for (var i = 0; i < data.feed.entry.length; i++) {
+            var csv = data.feed.entry[i].content.$t.split(",");
+            projectData.push({
+                template: "projects_template",
+                title: data.feed.entry[i].title.$t,
+                date: (csv.length > 0) ? csv[0].substring(8, csv[0].length) : "",
+                description: (csv.length > 1) ? csv[1].substring(8, csv[1].length) : ""
+            });
+        }
+        console.log(projectData);
+        htmlBuilder.append("projectsContainer", projectData);
+    });
+</script>
+
+<script type="text/javascript" src="js/scripts.min.js"></script>
+
+</html>
