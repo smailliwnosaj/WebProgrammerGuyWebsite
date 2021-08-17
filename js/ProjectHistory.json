@@ -1,4 +1,4 @@
-{ data: [
+var projectHistory = { data: [
 { project: "Generated translations and missing translation documentation for 5.3 Release", date: "August 2021" },
 { project: "Updated OPEN LDAP to support IPv6 addressing", date: "August 2021" },
 { project: "Improvements to securty on Single Sign On Cryptography", date: "August 2021" },
