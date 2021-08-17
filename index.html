@@ -163,7 +163,7 @@
 
 <template id="projects_template" style="display:none">
     <div class="projects_item" title="{{description}}">
-        <h3 class="projects_title">{{title}}</h3>
+        <h3 class="projects_title">{{project}}</h3>
         <div class="projects_date">{{date}}</div>
     </div>
 </template>
@@ -245,20 +245,20 @@
     ]);
 
     // PROJECTS
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1MZ-WRr2WN-k35TUSVPbSFMCmTYuGCsrw1es5ayT1ZnU/od6/public/basic?alt=json", 
+    $.getJSON("/js/ProjectHistory.js", 
     function(data) {
-        var projectData = [];
-        for (var i = 0; i < data.feed.entry.length; i++) {
-            var csv = data.feed.entry[i].content.$t.split(",");
-            projectData.push({
-                template: "projects_template",
-                title: data.feed.entry[i].title.$t,
-                date: (csv.length > 0) ? csv[0].substring(8, csv[0].length) : "",
-                description: (csv.length > 1) ? csv[1].substring(8, csv[1].length) : ""
-            });
-        }
-        console.log(projectData);
-        htmlBuilder.append("projectsContainer", projectData);
+        //var projectData = [];
+        //for (var i = 0; i < data.feed.entry.length; i++) {
+        //    var csv = data.feed.entry[i].content.$t.split(",");
+        //    projectData.push({
+        //        template: "projects_template",
+        //        title: data.feed.entry[i].title.$t,
+        //        date: (csv.length > 0) ? csv[0].substring(8, csv[0].length) : "",
+        //        description: (csv.length > 1) ? csv[1].substring(8, csv[1].length) : ""
+        //    });
+        //}
+        console.log(data);
+        htmlBuilder.append("projectsContainer", data.data);
     });
 </script>
 
