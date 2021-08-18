@@ -14,8 +14,6 @@ var htmlBuilder = {
 			if (htmlBuilder._templates[i].id == id) 
 				return htmlBuilder._templates[i].html;
 		}
-		console.warn(id);
-		console.warn(document.getElementById(id));
 		var html = document.getElementById(id).innerHTML;
 		htmlBuilder._templates.push({id:id,html:html});
 		return html;
