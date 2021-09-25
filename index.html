@@ -83,6 +83,11 @@
         <h2 class="heading"><br/>Certifications</h2>
         <div id="certificationsContainer"></div>
     </div>
+	
+    <div id="codeexamples">
+        <h2 class="heading">Code Examples</h2>
+	<div id="codeExamplesContainer"></div>
+    </div>
 
     <div id="projects">
         <h2 class="heading">Projects</h2>
@@ -242,6 +247,40 @@
         { certification:"CompTIA Security+ ce", date:"Jun 2016 – Jun 2019", authority:"CompTIA", imagePath:"/images/security.jpg", template:"certifications_template" },
         { certification:"CompTIA A+ ce", date:"Apr 2015 – Sep 2018", authority:"CompTIA", imagePath:"/images/a.jpg", template:"certifications_template" },
         { certification:"CompTIA Network+ ce", date:"Sep 2015 – Sep 2018", authority:"CompTIA", imagePath:"/images/network.png", template:"certifications_template" }
+    ]);
+	
+    // CODE EXAMPLES
+    htmlBuilder.append("codeExamplesContainer", [
+    {
+      "project":"LeetCode: Reverse Integer",
+      "date":"September 2021",
+      "description":"<a href='https://leetcode.com/submissions/detail/558584596/' target='_blank'>link</a>",
+      "template":"projects_template"
+    },
+    {
+      "project":"LeetCode: Container With Most Water",
+      "date":"September 2021",
+      "description":"<a href='https://leetcode.com/submissions/detail/560021324/' target='_blank'>link</a>",
+      "template":"projects_template"
+    },
+    {
+      "project":"LeetCode: Median of Two Sorted Arrays",
+      "date":"September 2021",
+      "description":"<a href='https://leetcode.com/submissions/detail/560293012/' target='_blank'>link</a>",
+      "template":"projects_template"
+    },
+    {
+      "project":"LeetCode: Nth Tribonacci Number",
+      "date":"September 2021",
+      "description":"<a href='https://leetcode.com/submissions/detail/560715641/' target='_blank'>link</a>",
+      "template":"projects_template"
+    },
+    {
+      "project":"LeetCode: Remove Duplicates From Sorted Array",
+      "date":"September 2021",
+      "description":"<a href='https://leetcode.com/submissions/detail/560715518/' target='_blank'>link</a>",
+      "template":"projects_template"
+    }    
     ]);
 
     // PROJECTS
