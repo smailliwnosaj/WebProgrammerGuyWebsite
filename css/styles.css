@@ -50,7 +50,7 @@ footer{padding:50px 0}
 #about{padding:75px 15px;border-bottom:1px solid #dcd9d9}
 #about h2{color:#374054}
 #about p{color:#74808a;margin:0}
-#experience{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9}
+#experience{padding:50px 15px;text-align:center;border-bottom:1px solid #dcd9d9;background-color: #f2f2f5;}
 #experience h2{color:#374054}
 #experience-timeline{margin:30px auto 0 auto;position:relative;max-width:1000px}
 #experience-timeline:before{position:absolute;content:'';top:0;bottom:0;left:303px;right:auto;height:100%;width:3px;background:#3498db;z-index:0}
@@ -71,8 +71,9 @@ footer{padding:50px 0}
 .education-block h4{color:#74808a;clear:both;font-weight:500;margin:0 0 15px 0}
 .education-block p,.education-block ul{margin:0;color:#74808a;font-size:0.9em}
 .education-block ul{padding:0 0 0 15px}
-#projects{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center;background-color: #f2f2f5;}
-#projects h2{color:#374054;margin-bottom:50px}
+#projects,#codeexamples{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center;}
+#codeexamples{background-color: #f2f2f5;}
+#projects h2,,#codeexamples h2{color:#374054;margin-bottom:50px}
 .project{position:relative;max-width:900px;margin:0 auto 30px auto;overflow:hidden;background:#fff;border-radius:4px}
 .project-image{float:left}
 .project-info{position:absolute;top:50%;transform:translateY(-50%);margin-left:300px;padding:15px}
