@@ -81,7 +81,7 @@ footer{padding:50px 0}
 .project-info p{color:#74808a;margin:0 0 15px 0;font-size:0.9em}
 .no-image .project-info{position:relative;margin:0;padding:30px 15px;transform:none}
 #more-projects{display:none}
-#skills{padding:50px 15px;text-align:center}
+#skills{padding:50px 15px;text-align:center;background-color: #f2f2f5;}
 #skills h2{color:#374054;margin-bottom:50px}
 #skills ul{display:block;margin:0 auto;padding:0;max-width:800px}
 #skills li{display:inline-block;margin:7px;padding:5px 10px;color:#374054;background:#e4e4ea;list-style:none;cursor:default;font-size:1.2em}
