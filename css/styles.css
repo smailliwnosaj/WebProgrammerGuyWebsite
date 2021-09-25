@@ -103,7 +103,8 @@ footer{padding:50px 0}
 .optional-section-block p,.optional-section-block ul{margin:0 0 15px 0;color:#74808a;font-size:0.9em}
 .optional-section-block ul{padding:0 0 0 15px}
 
-.projects_item {
+.projects_item,
+.codeexamples_item {
     border: #dcd9d9 1px solid;
     padding: 15px;
     margin: 2px;
@@ -114,15 +115,18 @@ footer{padding:50px 0}
     position:relative;
     height: 120px;
 }
-.projects_title {
+.projects_title,
+.codeexamples_title {
     color: #374054;
     font-weight: 500;
     margin: 0
 }
-.projects_description {
+.projects_link,
+.codeexamples_link {
     
 }
-.projects_date {
+.projects_date,
+.codeexamples_date {
     color: #74808a;
     position: absolute;
     bottom: 5px;
